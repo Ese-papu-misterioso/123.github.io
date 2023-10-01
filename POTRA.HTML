@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333333;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            background-color: #ffffff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        li span {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .seleccionado {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        
+        .seleccionado span {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista para la potra de hoy</h1>
+    <input type="text" id="nombreInput" placeholder="Ingrese un nombre">
+    <button onclick="agregarNombre()">Agregar</button>
+    <ul id="listaNombres"></ul>
+    <button onclick="eliminarNombre()">Eliminar</button>
+    
+    <script src="POTRA.JS"></script>
+</body>
+</html>
